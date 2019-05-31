@@ -49,8 +49,11 @@ C:\Users\me\Desktop\shiny-potato\shiny\bin\System.Web.WebPages.Razor.xml
 C:\Users\me\Desktop\shiny-potato\shiny\bin\Newtonsoft.Json.xml
 C:\Users\me\Desktop\shiny-potato\shiny\bin\Antlr3.Runtime.pdb
 C:\Users\me\Desktop\shiny-potato\shiny\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
-C:\Users\me\Desktop\shiny-potato\shiny\obj\Debug\shiny.csprojAssemblyReference.cache
 C:\Users\me\Desktop\shiny-potato\shiny\obj\Debug\shiny.csproj.CoreCompileInputs.cache
 C:\Users\me\Desktop\shiny-potato\shiny\obj\Debug\shiny.csproj.CopyComplete
 C:\Users\me\Desktop\shiny-potato\shiny\obj\Debug\shiny.dll
 C:\Users\me\Desktop\shiny-potato\shiny\obj\Debug\shiny.pdb
+C:\Users\me\Desktop\shiny-potato\shiny\bin\EntityFramework.dll
+C:\Users\me\Desktop\shiny-potato\shiny\bin\EntityFramework.SqlServer.dll
+C:\Users\me\Desktop\shiny-potato\shiny\bin\EntityFramework.xml
+C:\Users\me\Desktop\shiny-potato\shiny\bin\EntityFramework.SqlServer.xml

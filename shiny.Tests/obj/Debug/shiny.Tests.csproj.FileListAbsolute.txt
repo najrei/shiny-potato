@@ -33,3 +33,5 @@ C:\Users\me\Desktop\shiny-potato\shiny.Tests\obj\Debug\shiny.Tests.csproj.CoreCo
 C:\Users\me\Desktop\shiny-potato\shiny.Tests\obj\Debug\shiny.Tests.csproj.CopyComplete
 C:\Users\me\Desktop\shiny-potato\shiny.Tests\obj\Debug\shiny.Tests.dll
 C:\Users\me\Desktop\shiny-potato\shiny.Tests\obj\Debug\shiny.Tests.pdb
+C:\Users\me\Desktop\shiny-potato\shiny.Tests\bin\Debug\EntityFramework.dll
+C:\Users\me\Desktop\shiny-potato\shiny.Tests\bin\Debug\EntityFramework.xml
