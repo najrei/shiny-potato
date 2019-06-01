@@ -1,23 +1,17 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Web.Mvc;
+﻿using System.Web.Mvc;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
-using shiny;
 using shiny.Controllers;
 
 namespace shiny.Tests.Controllers
 {
     [TestClass]
-    class ItemControllerTest
+    public class ItemControllerTest
     {
-
         [TestMethod]
         public void Index()
         {
             // Arrange
-            ItemController controller = new ItemController();
+            ItemsController controller = new ItemsController();
 
             // Act
             ViewResult result = controller.Index() as ViewResult;
@@ -27,16 +21,19 @@ namespace shiny.Tests.Controllers
         }
 
         [TestMethod]
-        public void About()
+        public void Details()
         {
             // Arrange
-            HomeController controller = new HomeController();
+            ItemsController controller = new ItemsController();
 
             // Act
-            ViewResult result = controller.About() as ViewResult;
+            ViewResult result = controller.Details(1) as ViewResult;
 
             // Assert
-            Assert.AreEqual("Your application description page.", result.ViewBag.Message);
+            Assert.IsNotNull(result);
         }
+
+
+
     }
 }

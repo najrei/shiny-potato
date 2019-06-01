@@ -57,3 +57,4 @@ C:\Users\me\Desktop\shiny-potato\shiny\bin\EntityFramework.dll
 C:\Users\me\Desktop\shiny-potato\shiny\bin\EntityFramework.SqlServer.dll
 C:\Users\me\Desktop\shiny-potato\shiny\bin\EntityFramework.xml
 C:\Users\me\Desktop\shiny-potato\shiny\bin\EntityFramework.SqlServer.xml
+C:\Users\me\Desktop\shiny-potato\shiny\obj\Debug\shiny.csprojAssemblyReference.cache

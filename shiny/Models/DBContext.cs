@@ -4,6 +4,7 @@ namespace shiny.Models
     using System.Data.Entity;
     using System.ComponentModel.DataAnnotations.Schema;
     using System.Linq;
+    using System.Collections.Generic;
 
     public partial class DBContext : DbContext
     {
@@ -23,6 +24,12 @@ namespace shiny.Models
             modelBuilder.Entity<Item>()
                 .Property(e => e.Preis)
                 .HasPrecision(19, 4);
+        }
+
+        public List<Item> GetItems()
+        {
+            List<Item> result = Items.ToList();
+            return result;
         }
     }
 }

@@ -1,10 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Web.Mvc;
+﻿using System.Web.Mvc;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
-using shiny;
 using shiny.Controllers;
 
 namespace shiny.Tests.Controllers
@@ -26,6 +21,7 @@ namespace shiny.Tests.Controllers
         }
 
         [TestMethod]
+
         public void About()
         {
             // Arrange
