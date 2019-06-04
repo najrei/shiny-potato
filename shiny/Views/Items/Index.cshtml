@@ -10,15 +10,17 @@
 
     @foreach (var item in Model)
     {
-        <tr>
-            <td>
+        <div class="tabel">
+            <tr>
+                <td>
 
-                <img src="@String.Format("data:image/png;base64,{0}", item.Bild)" />
-                @Html.DisplayFor(modelItem => item.Preis)
-                @Html.DisplayFor(modelItem => item.Name)
-                @Html.ActionLink("Details", "Details", new { id = item.ItemID })
-            </td>
-        </tr>
+                    <img src="@String.Format("data:image/png;base64,{0}", item.Bild)" />
+                    @Html.DisplayFor(modelItem => item.Preis)
+                    @Html.DisplayFor(modelItem => item.Name)
+                    @Html.ActionLink("Details", "Details", new { id = item.ItemID })
+                </td>
+            </tr>
+        </div>
     }
 
 </table>
