@@ -25,7 +25,9 @@ namespace shiny.Models
 
         public int Verkauft { get; set; }
 
-        public byte[] Bild { get; set; }
+        public string Bild { get; set; }
+
+        public string Name { get; set; }
 
 
         [NotMapped]
@@ -33,10 +35,12 @@ namespace shiny.Models
         {
             get
             {
-                return new BLL.Converter().ConvertToImage(Bild);
+                return BildTest;
             }
-            set { Bild = new BLL.Converter().ConvertToByteArray(value); }
+            set { Bild = new BLL.Converter().ConvertToBase64(value); }
         }
+
+        
 
     }
 }

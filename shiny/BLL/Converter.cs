@@ -17,10 +17,16 @@ namespace shiny.BLL
 
         }
 
-        public byte[] ConvertToByteArray(Image bild)
+        public string ConvertToBase64(Image bild)
         {
-            ImageConverter convert = new ImageConverter();
-            return (byte[])convert.ConvertTo(bild, typeof(byte[]));
+            using (MemoryStream m = new MemoryStream())
+            {
+                bild.Save(m, bild.RawFormat);
+                byte[] imageBytes = m.ToArray();
+
+                string base64String = Convert.ToBase64String(imageBytes);
+                return base64String;
+            }
         }
     }
 }

@@ -1,4 +1,5 @@
-﻿using System;
+﻿using shiny.DAL;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -10,6 +11,9 @@ namespace shiny.Controllers
     {
         public ActionResult Index()
         {
+            AddContent ac = new AddContent();
+            ac.Insert();
+
             return View();
         }
 

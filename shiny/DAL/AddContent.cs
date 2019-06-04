@@ -21,9 +21,12 @@ namespace shiny.DAL
             it.Preis = 14.99m;
             it.SpeicherOrt = @"C:\Users\me\Desktop\SockeHerz.jpg";
             it.Verkauft = 0;
-            it.Bild = new BLL.Converter().ConvertToByteArray(bm);
+            it.Bild = new BLL.Converter().ConvertToBase64(bm);
+            it.Name = "Herzchensocken";
+
 
             db.Items.Add(it);
+            db.SaveChanges();
             
         }
     }

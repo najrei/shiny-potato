@@ -4,48 +4,21 @@
     ViewBag.Title = "Index";
 }
 
-<h2>Index</h2>
+<h2>Socken</h2>
 
-<p>
-    @Html.ActionLink("Create New", "Create")
-</p>
 <table class="table">
-    <tr>
-        <th>
-            @Html.DisplayNameFor(model => model.SpeicherOrt)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.Preis)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.Lager)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.Verkauft)
-        </th>
-        <th></th>
-    </tr>
 
-@foreach (var item in Model) {
-    <tr>
-        <td>
-            @Html.DisplayFor(modelItem => item.SpeicherOrt)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.Preis)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.Lager)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.Verkauft)
-        </td>
-        <td>
-            @Html.ActionLink("Edit", "Edit", new { id=item.ItemID }) |
-            @Html.ActionLink("Details", "Details", new { id=item.ItemID }) 
-            
-        </td>
-    </tr>
-}
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>
+
+                <img src="@String.Format("data:image/png;base64,{0}", item.Bild)" />
+                @Html.DisplayFor(modelItem => item.Preis)
+                @Html.DisplayFor(modelItem => item.Name)
+                @Html.ActionLink("Details", "Details", new { id = item.ItemID })
+            </td>
+        </tr>
+    }
 
 </table>

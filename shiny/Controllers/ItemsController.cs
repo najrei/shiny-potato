@@ -17,7 +17,11 @@ namespace shiny.Controllers
         // GET: Items
         public ActionResult Index()
         {
-            return View(db.Items.ToList());
+            var flag = db.Items.ToList();
+            
+            
+
+            return View(flag);
         }
 
         // GET: Items/Details/5
