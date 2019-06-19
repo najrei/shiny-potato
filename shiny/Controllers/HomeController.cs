@@ -11,8 +11,7 @@ namespace shiny.Controllers
     {
         public ActionResult Index()
         {
-            AddContent ac = new AddContent();
-            ac.Insert();
+            AddContent ac = new AddContent();            
 
             return View();
         }

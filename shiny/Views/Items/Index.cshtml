@@ -3,24 +3,38 @@
 @{
     ViewBag.Title = "Index";
 }
+<!Doctype html>
 
-<h2>Socken</h2>
+<header>
+    <meta name="Socken" content="width=device-width" />
+    <link rel="stylesheet" href="~/Content/Index.css" type="text/css" />
+</header>
 
-<table class="table">
+<body>
 
-    @foreach (var item in Model)
-    {
-        <div class="tabel">
+
+    <h2>Socken</h2>
+
+    <table class="table">
+
+        @foreach (var item in Model)
+        {
+
             <tr>
                 <td>
+                    <img class="sockimage" src="@String.Format("data:image/png;base64,{0}", item.Bild)" />
+                </td>
+            </tr>
 
-                    <img src="@String.Format("data:image/png;base64,{0}", item.Bild)" />
+            <tr>
+                <td>
                     @Html.DisplayFor(modelItem => item.Preis)
                     @Html.DisplayFor(modelItem => item.Name)
                     @Html.ActionLink("Details", "Details", new { id = item.ItemID })
+
                 </td>
             </tr>
-        </div>
-    }
+        }
 
-</table>
+    </table>
+</body>

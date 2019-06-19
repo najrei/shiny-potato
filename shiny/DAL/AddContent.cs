@@ -15,11 +15,11 @@ namespace shiny.DAL
         {
             Item it = new Item();
 
-            Bitmap bm = new Bitmap("");
+            Bitmap bm = new Bitmap(@"C:\Users\me\Desktop\shiny-potato\Socken\humsocke.jpg");
 
             it.Lager = 999;
             it.Preis = 14.99m;
-            it.SpeicherOrt = @"C:\Users\me\Desktop\SockeHerz.jpg";
+            it.SpeicherOrt = @"C:\Users\me\Desktop\shiny-potato\Socken\humsocke.jpg";
             it.Verkauft = 0;
             it.Bild = new BLL.Converter().ConvertToBase64(bm);
             it.Name = "H&M Socken";
