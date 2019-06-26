@@ -41,10 +41,10 @@
         <dd>
             @Html.DisplayFor(model => model.Verkauft)
         </dd>
-
+        )
     </dl>
 </div>
 <p>
-    @Html.ActionLink("Edit", "Edit", new { id = Model.ItemID }) |
     @Html.ActionLink("Back to List", "Index")
+    @Html.ActionLink("In den Weinkaufswargen", "AddToSesson", new { id = Model.ItemID })
 </p>

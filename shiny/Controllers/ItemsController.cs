@@ -18,7 +18,8 @@ namespace shiny.Controllers
         public ActionResult Index()
         {
             var flag = db.Items.ToList();
-            
+            var produkte = Session["products"] as List<SessonModel>;
+
             
 
             return View(flag);
@@ -37,6 +38,19 @@ namespace shiny.Controllers
                 return HttpNotFound();
             }
             return View(item);
+        }
+
+        public ActionResult AddToSesson(int? id)
+        {
+            SessonModel sm = new SessonModel();
+            Item item = db.Items.Find(id);
+            sm.ItemId = item.ItemID;
+            sm.Anzahl = 1;
+
+            List<SessonModel> lsm = new List<SessonModel>();
+            lsm.Add(sm);
+            Session["products"] = lsm;
+            return RedirectToAction("Index");
         }
 
         

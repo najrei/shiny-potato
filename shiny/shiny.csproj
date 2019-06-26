@@ -137,6 +137,7 @@
     </Compile>
     <Compile Include="Models\DBContext.cs" />
     <Compile Include="Models\Item.cs" />
+    <Compile Include="Models\SessonModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

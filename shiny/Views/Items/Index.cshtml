@@ -16,25 +16,26 @@
     <h2>Socken</h2>
 
     <table class="table">
+        <tr>
+            @foreach (var item in Model)
+            {
 
-        @foreach (var item in Model)
-        {
 
-            <tr>
-                <td>
+            <td onclick="location.href = '@(Url.Action("Details", "Items", new { id = item.ItemID }))'">
+
+                <div>
                     <img class="sockimage" src="@String.Format("data:image/png;base64,{0}", item.Bild)" />
-                </td>
-            </tr>
+                </div>
 
-            <tr>
-                <td>
-                    @Html.DisplayFor(modelItem => item.Preis)
+                <div class="index-Name">
                     @Html.DisplayFor(modelItem => item.Name)
-                    @Html.ActionLink("Details", "Details", new { id = item.ItemID })
+                </div>
 
-                </td>
-            </tr>
-        }
-
+                <div class="index-Preis">
+                    @Html.DisplayFor(modelItem => item.Preis)
+                </div>
+            </td>
+            }
+        </tr>
     </table>
 </body>
