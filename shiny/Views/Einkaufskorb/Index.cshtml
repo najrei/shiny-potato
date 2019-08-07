@@ -1,0 +1,23 @@
+﻿@model IEnumerable<shiny.Models.Item>
+
+@{
+    ViewBag.Title = "Index";
+}
+<h2>Socken</h2>
+
+<table class="table">
+    <tr>
+        @foreach (var item in Model)
+        {
+            <td>
+                <div class="index-Name">
+                    @Html.DisplayFor(modelItem => item.Name)
+                </div>
+
+                <div class="index-Preis">
+                    @Html.DisplayFor(modelItem => item.Preis)
+                </div>
+            </td>
+        }
+    </tr>
+</table>

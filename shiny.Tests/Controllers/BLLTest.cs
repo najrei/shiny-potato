@@ -9,7 +9,7 @@ namespace shiny.Tests.Controllers
         [TestMethod]
         public void ConvertToBitmap()
         {
-            byte[] image = 
+             
         }
     }
 

@@ -18,10 +18,7 @@ namespace shiny.Controllers
         public ActionResult Index()
         {
             var flag = db.Items.ToList();
-            var produkte = Session["products"] as List<SessonModel>;
-
-            
-
+ 
             return View(flag);
         }
 
